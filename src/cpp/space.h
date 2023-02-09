@@ -2,13 +2,14 @@
 #include <vector>
 #include "point.h"
 #include "obstacle.h"
-// TODO: implement graph data structure (model as adjacency list? adjacency matrix? pointers inside Points?)
+
 // positive direction: up and right
 
 struct Space
 {
-  int width;
-  int height;
+  int id;
+  unsigned int width;
+  unsigned int height;
 
   Point start;
   Point end;

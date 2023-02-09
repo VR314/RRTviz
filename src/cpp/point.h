@@ -4,8 +4,11 @@
 
 struct Point
 {
-  int x;
-  int y;
+  int id;
+  unsigned int x;
+  unsigned int y;
+  Point *parent;
+  std::vector<Point *> children;
 
   std::string serialize();
 
